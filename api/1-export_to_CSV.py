@@ -21,7 +21,7 @@ if __name__ == "__main__":
     url1 = "https://jsonplaceholder.typicode.com/todos"
     url2 = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}"
     payload = {"userId": sys.argv[1]}
-    # a sinle variable used to accept the response
+    # a single variable used to accept the response
     # after request is made using the module
     req_rep1 = requests.get(url1, params=payload)
     req_rep2 = requests.get(url2)
