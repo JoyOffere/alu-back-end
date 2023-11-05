@@ -6,8 +6,8 @@ data in the JSON format.
 
 Requirements:
 
-Records all tasks from all employees
-Format must be: { "USER_ID": [ {"username":
+~ Records all tasks from all employees
+~ Format must be: { "USER_ID": [ {"username":
 "USERNAME", "task": "TASK_TITLE", "completed":
 TASK_COMPLETED_STATUS}, {"username": "USERNAME",
 "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS},
@@ -16,7 +16,7 @@ TASK_COMPLETED_STATUS}, {"username": "USERNAME",
 {"username": "USERNAME", "task": "TASK_TITLE",
 "completed": TASK_COMPLETED_STATUS}, ... ]}
 
-File name must be: todo_all_employees.json
+~ File name must be: todo_all_employees.json
 """
 if __name__ == "__main__":
     import json
@@ -53,3 +53,4 @@ if __name__ == "__main__":
         user_count += 1
     with open("todo_all_employees.json", 'w', encoding="utf-8") as jsonfile:
         json.dump(all_user_json, jsonfile)
+
